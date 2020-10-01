@@ -1,0 +1,10 @@
+<div class="content-box">
+    <h2>Edit Listing</h2>
+    <app-listing-data-form
+        [currentName]="listing.name"
+        [currentDescription]="listing.description"
+        [currentPrice]="listing.price"
+        buttonText="Save Changes"
+        (onSubmit)="onSaveChanges()"
+    ></app-listing-data-form>
+</div>
